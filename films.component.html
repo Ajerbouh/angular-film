@@ -1,0 +1,16 @@
+<p>
+    films works!
+</p>
+<app-searchform (sendSearch)="getMovies($event)"></app-searchform>
+
+<ul *ngIf="movies">
+    <li>
+        {{ movies?.Title }}
+    </li>
+    <li>
+        {{ movies?.Year}}
+    </li>
+    <li>
+        {{ movies?.Actors}}
+    </li>
+</ul>
